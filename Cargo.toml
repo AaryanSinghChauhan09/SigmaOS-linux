@@ -1,0 +1,8 @@
+[package]
+name = "sigmaos-linux"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Kernel source packaging and patch set — SigmaOS component inspired by Arch Linux infrastructure."
+
+[dependencies]
