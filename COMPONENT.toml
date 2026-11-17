@@ -3,7 +3,7 @@ name = "SigmaOS-linux"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "linux component"
+description = "SigmaOS linux component (Arch Linux inspired)"
 upstream = []
 
 [contract]
