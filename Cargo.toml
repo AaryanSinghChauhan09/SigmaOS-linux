@@ -1,8 +1,15 @@
 [package]
-name = "sigmaos-linux"
+name = "SigmaOS-linux"
 version = "0.1.0"
 edition = "2021"
-license = "MIT"
-description = "Kernel source packaging and patch set — SigmaOS component inspired by Arch Linux infrastructure."
+license = "Apache-2.0"
+description = "SigmaOS linux component"
+
+[lib]
+name = "linux"
+path = "src/lib.rs"
 
 [dependencies]
+thiserror = "1"
+
+[dev-dependencies]
