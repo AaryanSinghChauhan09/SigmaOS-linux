@@ -1,16 +1,16 @@
 [component]
 name = "SigmaOS-linux"
 tier = 2
-stability = "scaffold"
+stability = "beta"
 language = "rust"
 description = "SigmaOS linux component (Arch Linux inspired)"
-upstream = []
+upstream = ["https://github.com/archlinux/linux"]
 
 [contract]
-provides = ["component"]
+provides = ["kernel-version", "config-fragments", "pkgrel-model"]
 depends_on = []
 
 [maturity]
 status = "Implemented"
-test_evidence = "Compiles and passes AAA unit tests"
+test_evidence = "cargo test: 8 tests pass (Makefile parse, config fragments, pkgrel)"
 next_milestone = "Hardware and runtime integration"
